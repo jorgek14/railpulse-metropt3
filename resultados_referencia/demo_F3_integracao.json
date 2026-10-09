@@ -1,0 +1,65 @@
+{
+  "status": {
+    "status": "executando",
+    "mode": "replay_historico_http",
+    "counts": {
+      "readings": 303,
+      "alerts": 3,
+      "primary_alerts": 1
+    },
+    "last": {
+      "id": 303,
+      "timestamp": "2020-06-05 10:19:53",
+      "tp3": 8.198,
+      "motor_current": 5.557499999999999,
+      "oil_temperature": 75.875,
+      "dv_eletric": 1.0
+    },
+    "gaps": 0,
+    "cycles": 2,
+    "parameters": {
+      "pressure_target_bar": 9.7,
+      "recovery_limit_s": 188.0,
+      "duration_limit_s": 337.12000000000035,
+      "max_gap_s": 30.0
+    }
+  },
+  "alerts": [
+    {
+      "id": 1,
+      "method": "Pressao_nao_recuperada_q99",
+      "timestamp": "2020-06-05 09:51:38",
+      "cycle_start": "2020-06-05 09:48:30",
+      "elapsed_s": 188.0,
+      "pressure_bar": 9.082,
+      "start_pressure_bar": 7.976000000000001,
+      "motor_current_a": 5.75,
+      "severity": "ATENCAO",
+      "message": "Recuperacao lenta: pressao ainda abaixo de 9.7 bar apos 188 s"
+    },
+    {
+      "id": 2,
+      "method": "Somente_carga_mesmo_limiar",
+      "timestamp": "2020-06-05 09:51:38",
+      "cycle_start": "2020-06-05 09:48:30",
+      "elapsed_s": 188.0,
+      "pressure_bar": 9.082,
+      "start_pressure_bar": 7.976000000000001,
+      "motor_current_a": 5.75,
+      "severity": "INFORMATIVO",
+      "message": "Ciclo sob carga excedeu o tempo-limite de 188.00 s"
+    },
+    {
+      "id": 3,
+      "method": "Carga_longa_q99",
+      "timestamp": "2020-06-05 09:54:17",
+      "cycle_start": "2020-06-05 09:48:30",
+      "elapsed_s": 347.0,
+      "pressure_bar": 8.874,
+      "start_pressure_bar": 7.976000000000001,
+      "motor_current_a": 5.69,
+      "severity": "INFORMATIVO",
+      "message": "Ciclo sob carga excedeu o tempo-limite de 337.12 s"
+    }
+  ]
+}

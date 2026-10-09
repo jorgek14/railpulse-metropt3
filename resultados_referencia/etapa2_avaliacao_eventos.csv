@@ -1,0 +1,10 @@
+modelo,evento,janelas_durante,janelas_anomalas_durante,novos_alertas_2h_antes,primeiro_novo_alerta_2h_antes,novo_alerta_durante,primeiro_alerta_durante,alerta_ja_ativo_inicio,inicio_alerta_ja_ativo
+global_fev,F2,40,40,0,,1,2020-05-29 23:40:00,False,
+global_fev,F3,286,286,0,,3,2020-06-05 10:20:00,False,
+global_fev,F4,27,27,0,,1,2020-07-15 18:00:00,True,2020-07-15 00:10:00
+global,F2,40,0,0,,0,,False,
+global,F3,286,6,0,,0,,False,
+global,F4,27,0,0,,0,,False,
+regime,F2,40,1,0,,0,,False,
+regime,F3,286,0,0,,0,,False,
+regime,F4,27,0,0,,0,,False,

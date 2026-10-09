@@ -1,0 +1,17 @@
+{
+  "q99_tempo_ate_9_7_s": 188.0,
+  "q99_duracao_carga_s": 337.12000000000035,
+  "n_ciclos_calibracao": 953,
+  "n_calibracao_alcancaram_meta": 948,
+  "pct_sem_meta_na_calibracao": 0.5246589716684125,
+  "original_n": 1516948,
+  "n_fases_carga": 15769,
+  "n_ciclos_inicio_nominal_validos": 10417,
+  "pressao_referencia_bar": 9.7,
+  "estado_carga": "Motor_current>2A e DV_eletric>0.5",
+  "max_intervalo_telemetria_s": 30.0,
+  "cal_periodo": "2020-05-01 ate 2020-05-22",
+  "test_periodo": "2020-05-23 ate 2020-09-01",
+  "sha256_csv": "db30ccb4ea402e3c8bf2c99db06e288d4f2a772f6928f9dbe26a920d69793e24",
+  "limite": "Avaliação retrospectiva informada pelos eventos; meta e percentis não foram estabelecidos em um protocolo preregistrado. Falhas não rotuladas fora dos intervalos podem existir."
+}

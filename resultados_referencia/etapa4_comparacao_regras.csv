@@ -1,0 +1,4 @@
+metodo,total_alertas_teste,alertas_pre2h_falhas,alertas_durante_falhas,alertas_fora_proximidades,eventos_com_alerta_pre2h,alertas_fora_por_30_dias
+Carga_longa_q99,21,7,1,13,3,3.86
+Pressao_nao_recuperada_q99,33,13,0,20,3,5.94
+Somente_carga_mesmo_limiar,136,18,0,115,3,34.16

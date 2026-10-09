@@ -1,0 +1,14 @@
+{
+  "original_registros": 1516948,
+  "ciclos_identificados": 15769,
+  "alertas_esperados": 190,
+  "alertas_stream": 190,
+  "metodos": {
+    "Somente_carga_mesmo_limiar": 136,
+    "Carga_longa_q99": 21,
+    "Pressao_nao_recuperada_q99": 33
+  },
+  "ausentes": [],
+  "extras": [],
+  "todos_iguais": true
+}

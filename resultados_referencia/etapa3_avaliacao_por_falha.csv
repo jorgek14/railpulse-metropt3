@@ -1,0 +1,16 @@
+modelo,falha,janelas_disponiveis_2h_antes,janelas_alerta_2h_antes,janelas_disponiveis_durante,janelas_alerta_durante,novos_alertas_persistentes_2h_antes,horario_primeiro_novo_alerta,alerta_iniciado_antes_e_ativo_na_falha,novos_alertas_durante
+Fisico_IsolationForest,F2,12,0,39,2,0,,0,0
+Fisico_IsolationForest,F3,12,0,285,8,0,,0,2
+Fisico_IsolationForest,F4,12,0,26,14,0,,0,3
+Regra_alta_carga_baixo_ganho,F2,12,0,39,1,0,,0,0
+Regra_alta_carga_baixo_ganho,F3,12,0,285,16,0,,0,2
+Regra_alta_carga_baixo_ganho,F4,12,0,26,13,0,,0,1
+Apenas_alta_carga,F2,12,0,39,36,0,,0,1
+Apenas_alta_carga,F3,12,0,285,271,0,,0,3
+Apenas_alta_carga,F4,12,0,26,17,0,,0,2
+Baseline_global_E2,F2,12,0,39,0,0,,0,0
+Baseline_global_E2,F3,12,0,285,6,0,,0,0
+Baseline_global_E2,F4,12,0,26,0,0,,0,0
+Baseline_regime_E2,F2,12,1,39,1,0,,0,0
+Baseline_regime_E2,F3,12,0,285,0,0,,0,0
+Baseline_regime_E2,F4,12,2,26,0,0,,0,0

@@ -1,0 +1,4 @@
+modelo,janelas_teste,anomalias_janelas,taxa_anomalias_pct,episodios_total,episodios_fora_eventos,dias_observados,dias_fora_eventos,alertas_dia_observado,cal_anomalias_pct
+global_fev,11967,2966,24.78482493523857,53,46,102,99,0.46464646464646464,1.03359173126615
+global,11967,34,0.2841146486170302,1,0,102,99,0.0,1.038753495805034
+regime,11967,285,2.3815492604662825,22,22,102,99,0.2222222222222222,1.0787055533359968

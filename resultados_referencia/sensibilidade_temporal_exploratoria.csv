@@ -1,0 +1,4 @@
+percentil_calibracao,limiar_segundos,alertas_total,alertas_pre2h,alertas_fora_proximidades,eventos_pre2h,alertas_pre_F2,alertas_pre_F3,alertas_pre_F4
+0.95,119.0,363,17,333,3,2,1,14
+0.975,139.0,109,16,90,3,2,1,13
+0.99,188.0,33,13,20,3,2,1,10

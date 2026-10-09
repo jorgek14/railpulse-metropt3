@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MetroPT-3 | Monitoramento Industrial IoT - Replay</title>
+<link rel="stylesheet" href="/style.css">
+</head><body>
+<div class="shell">
+<header class="header">
+ <div class="brand"><div class="brandmark">〽</div><div><div class="brandtop">METROPT-3 • LABORATÓRIO INDUSTRIAL</div><h1>Rail<span>Pulse</span> <em>/ APU Monitor</em></h1></div></div>
+ <div class="header-right"><span class="pill"><span class="pulse"></span> SERVIDOR LOCAL</span><span class="pill outline">REPLAY HISTÓRICO • NÃO É HARDWARE REAL</span></div>
+</header>
+<main>
+ <div class="pagehead"><div><div class="kicker">CENTRAL DE CONDIÇÃO • COMPRESSOR FERROVIÁRIO</div><h2>Telemetria e diagnóstico operacional</h2><p>Leituras reais do MetroPT-3 reproduzidas artificialmente através de um fluxo HTTP.</p></div><div class="timebox"><small>Última amostra do dataset</small><strong id="observedTime">—</strong><span>Horário de 2020, não horário atual</span></div></div>
+ <div class="metric-grid">
+  <div class="metric"><div class="metricname">Pressão pneumática <span>TP3</span></div><div class="metricval"><strong id="p-val">—</strong><span>bar</span></div><div class="metricfoot">Meta exploratória: 9,7 bar</div></div>
+  <div class="metric"><div class="metricname">Corrente do motor <span>MOTOR</span></div><div class="metricval"><strong id="a-val">—</strong><span>A</span></div><div class="metricfoot">Condição de carga: corrente &gt; 2 A e DV ativo</div></div>
+  <div class="metric"><div class="metricname">Temperatura do óleo <span>ÓLEO</span></div><div class="metricval"><strong id="t-val">—</strong><span>°C</span></div><div class="metricfoot">Monitoramento de tendência</div></div>
+  <div class="metric"><div class="metricname">Estado operacional <span>COMPRESSOR</span></div><div id="state" class="stateval">AGUARDANDO</div><div class="metricfoot" id="readingCount">0 leituras recebidas</div></div>
+ </div>
+ <div class="bodygrid">
+  <div class="leftcol">
+   <section class="panel graphpanel"><div class="panelheading"><div><span class="smallcaps">TELEMETRIA</span><h3>Pressão da linha pneumática</h3></div><div class="legend"><span><i class="lineitem"></i> TP3</span><span><i class="dashitem"></i> alvo 9,7 bar</span></div></div><div class="chartwrap"><canvas id="pressureChart" height="225"></canvas></div><p class="axisnote">Dados históricos • lacunas superiores a 30 s interrompem a linha</p></section>
+   <section class="panel graphpanel"><div class="panelheading"><div><span class="smallcaps">MÁQUINA</span><h3>Corrente elétrica do motor</h3></div><div class="legend"><span><i class="currentitem"></i> Corrente (A)</span></div></div><div class="chartwrap shortchart"><canvas id="currentChart" height="150"></canvas></div></section>
+   <section class="panel"><div class="panelheading"><div><span class="smallcaps">REGISTROS</span><h3>Histórico recente dos alertas</h3></div><a class="download" href="/api/export_alerts.csv" download>Exportar CSV ↗</a></div><div class="alerttable"><div class="thead"><div>Instante histórico</div><div>Regra acionada</div><div>TP3</div></div><div id="alerts"><div class="empty">Nenhum alerta recebido nesta sessão.</div></div></div></section>
+  </div>
+  <aside class="rightcol">
+   <section class="panel statuspanel"><span class="smallcaps">STATUS DO EXPERIMENTO</span><h3>Motor de detecção</h3><div class="statusrow"><span>Regra principal</span><strong>Pressão não recuperada</strong></div><div class="statusrow"><span>Limiar temporal</span><strong id="limit">188 s</strong></div><div class="statusrow"><span>Pressão-alvo</span><strong id="target">9,7 bar</strong></div><div class="statusrow"><span>Máx. lacuna aceita</span><strong id="gap">30 s</strong></div><div class="bigstat"><div><small>Alertas principais</small><strong id="primaryCount">0</strong></div><div><small>Ciclos identificados</small><strong id="cycleCount">0</strong></div></div><div class="bigstat secondary"><div><small>Total de alertas (3 regras)</small><strong id="totalCount">0</strong></div><div><small>Lacunas detectadas</small><strong id="gapCount">0</strong></div></div></section>
+   <section class="panel methodpanel"><span class="smallcaps">COMO FUNCIONA</span><h3>Do sensor ao alerta</h3><div class="pipeline"><div><i>01</i><span><b>Reprodução</b><small>CSV histórico → transmissor HTTP</small></span></div><div><i>02</i><span><b>Ingestão</b><small>API local → SQLite</small></span></div><div><i>03</i><span><b>Detecção causal</b><small>Regra calibrada na Etapa 4</small></span></div><div><i>04</i><span><b>Alerta</b><small>Evento persistido e exibido aqui</small></span></div></div></section>
+   <section class="panel notice"><span class="smallcaps">AVISO METODOLÓGICO</span><p>Esta é uma <b>simulação computacional</b> com leituras históricas de 2020. Não há sensores físicos, ESP32, MQTT ou infraestrutura industrial conectados. Um alerta indica recuperação de pressão lenta, e não confirma um vazamento.</p><button id="reset" type="button">Reiniciar sessão</button><p class="noticehint" id="hint"></p></section>
+  </aside>
+ </div>
+</main><footer>METROPT-3 / PROJETO ACADÊMICO <span>•</span> Protótipo de demonstração - sem uso em operação crítica</footer>
+</div>
+<script src="/app.js"></script>
+</body></html>

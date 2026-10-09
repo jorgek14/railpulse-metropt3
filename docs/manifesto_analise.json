@@ -1,0 +1,10 @@
+{
+  "csv_nome": "MetroPT3(AirCompressor).csv",
+  "sha256": "db30ccb4ea402e3c8bf2c99db06e288d4f2a772f6928f9dbe26a920d69793e24",
+  "article_alerts": {
+    "Pressao_nao_recuperada_q99": 33,
+    "Carga_longa_q99": 21,
+    "Somente_carga_mesmo_limiar": 136
+  },
+  "event_window": "F2-F4 pre-2h; event reported times; no complete ground truth"
+}

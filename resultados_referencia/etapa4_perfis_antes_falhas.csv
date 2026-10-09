@@ -1,0 +1,13 @@
+falha,periodo,n_inicio_carga,n_completos_ate_limite,duracao_mediana_concluidos_s,recuperacao_9_7_mediana_concluidos_s,n_em_andamento_no_limite,idade_carga_ativa_no_limite_min,pressao_partida_mediana_bar,temperatura_mediana_C
+F1,pre2h,0,0,,,0,,,
+F1,pre24h,9,9,109.0,90.0,0,,8.062,51.084090909090904
+F1,durante,1,0,,,1,1415.0166666666667,,
+F2,pre2h,5,4,169.0,99.0,1,15.066666666666666,8.041,63.852615384615376
+F2,pre24h,61,60,129.0,109.0,1,15.066666666666666,8.056999999999999,67.43973214285714
+F2,durante,0,0,,,0,,,
+F3,pre2h,6,5,119.0,99.0,1,11.5,8.062,62.736538461538444
+F3,pre24h,62,61,129.0,99.0,1,11.5,8.054,63.03750000000001
+F3,durante,0,0,,,0,,,
+F4,pre2h,13,12,332.5,218.0,1,4.616666666666666,8.094999999999999,77.75964825119236
+F4,pre24h,115,114,178.0,139.0,1,4.616666666666666,8.084,71.94210526315788
+F4,durante,0,0,,,0,,,
